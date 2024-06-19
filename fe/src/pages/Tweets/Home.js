@@ -9,7 +9,7 @@ const THome = () => {
   
   useEffect(() => {
     const fetchData = async () => {
-      // To use with mative version:
+      // To use with native version:
       //const res = await fetch("http://localhost:5000/tweets-results");
       // To use with docker-compose:
       //const res = await fetch(`${process.env.REACT_APP_BE_NETWORK}:${process.env.REACT_APP_BE_PORT}/tweets-results`);
