@@ -14,8 +14,8 @@ const THome = () => {
       // To use with docker-compose:
       //const res = await fetch(`${process.env.REACT_APP_BE_NETWORK}:${process.env.REACT_APP_BE_PORT}/tweets-results`);
       // To use with CodeBuild for ECR-deployed containers:
-      //const res = await fetch(`${process.env.REACT_APP_API_SERVICE_URL}/tweets-results`);
-      const res = await fetch(`tweets-results`);
+      const res = await fetch(`${process.env.REACT_APP_API_SERVICE_URL}/tweets-results`);
+      //const res = await fetch(`tweets-results`);
       const { results } = await res.json();
       console.log(results);
       setTweets([...results]);
